@@ -1,0 +1,29 @@
+.bl-cardUnit {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bl-cardUnit.bl-cardUnit__col3 {
+  margin-bottom: -3rem;
+  .bl-card {
+    width: calc((389/1230) *100%);
+    height: 38.7rem;
+    margin-bottom: 3rem;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .bl-cardUnit.bl-cardUnit__col3 {
+    .bl-card {
+      width: 100%;
+      max-width: 70rem;
+      height: auto;
+      margin-right: auto !important;
+      margin-left: auto;
+    }
+  }
+}

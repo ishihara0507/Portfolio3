@@ -1,0 +1,99 @@
+.ly-header_inner {
+  max-width: 102.2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .ly-header_inner {
+    padding-right: 7rem;
+  }
+}
+
+.ly-cont {
+  max-width: 104rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  margin: 0 auto;
+}
+
+.ly-fv {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 16.4rem;
+  &:before {
+    display: block;
+    content: "";
+    width: 70rem;
+    height: 72rem;
+    position: absolute;
+    top: -50px;
+    right: -70px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #63fbd7 0%, #05a5fa 100%);
+    z-index: -1;
+  }
+}
+@media (max-width: 599px) {
+  .ly-fv {
+    &:before {
+      top: -50px;
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
+}
+.ly-secFeatures {
+  padding-top: 2rem;
+}
+.ly-secPrice {
+  background-color: rgba(238, 251, 251, 1);
+  padding-top: 5.5rem;
+  padding-bottom: 6.8rem;
+  .ly-secPrice_inner {
+    max-width: 96.6rem;
+  }
+}
+.ly-secBlog {
+  background-color: rgba(238, 251, 251, 1);
+  padding: 5.5rem 0 9.1rem;
+  .ly-secBlog_inner {
+    max-width: 127rem;
+    margin: 0 auto;
+  }
+}
+.ly-secFAQ {
+  padding-top: 5.5rem;
+  padding-bottom: 8.6rem;
+  .ly-secFAQ_inner {
+    max-width: 90.7rem;
+    margin: 0 auto;
+  }
+}
+.ly-secWorks {
+  padding: 5.5rem 0 9rem;
+}
+.ly-secContact {
+  text-align: center;
+  background:linear-gradient(90deg, rgba(5, 165, 250, 1) 0%, rgba(99, 251, 215, 1));
+  padding: 6.3rem 2rem 7rem;
+  .ly-secContact_inner {  
+    max-width: 90.8rem;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    padding: 3.1rem 6.2rem 3.5rem 6.3rem;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 960px) {
+  .ly-fv {
+    padding-bottom: 10rem;
+  }
+  .ly-secContact {
+      .ly-secContact_inner {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+  }
+}
